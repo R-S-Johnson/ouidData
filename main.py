@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 
+
+
 with open("data.txt") as f:
     data = [line.split(',') for line in f.readlines()]
 
