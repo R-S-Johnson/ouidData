@@ -18,9 +18,9 @@ for i, day in enumerate(data):
         if len(num) > 1 and num[1] != '\n':
             hit = num[1]
             num = num[0]
-        if hit != None and hit == 'g':
-            xGas.append(int(time))
-            yGas.append(30 - i)
+            if hit == 'g':
+                xGas.append(int(time))
+                yGas.append(30 - i)
         else:
             xCart.append(int(time))
             yCart.append(30 - i)
