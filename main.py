@@ -19,7 +19,6 @@ for i, day in enumerate(data):
             time = int(time)/60*100
         else:
             time = int(time[-2:])/60*100 + int(time[:-2])*100
-        print(time)
         if len(num) > 1 and num[1] != '\n':
             hit = num[1]
             num = num[0]
