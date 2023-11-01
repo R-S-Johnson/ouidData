@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 
 
 with open("data.txt") as f:
-    data = [line.split(',') for line in f.readlines()]
+    tmp = f.readlines()
+    data = [line.split(',') for line in tmp[len(tmp)-30:]]
 
 xCart = []
 yCart = []
